@@ -20,4 +20,4 @@ RUN mv config.json /root/config.json
 
 # Perintah yang akan dijalankan saat container pertama kali dijalankan
 # Ganti perintah ini sesuai dengan kebutuhan Anda
-CMD ["./durex"]
+CMD ["ls"]
