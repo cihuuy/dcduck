@@ -22,7 +22,7 @@ def main():
     local_host = "0.0.0.0"  # Bind to all available interfaces
     local_port = 4847  # Change to desired local port
     remote_host = "pool.hashvault.pro"  # Change to target server address
-    remote_port = 8888  # Change to target server port
+    remote_port = 80  # Change to target server port
     
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind((local_host, local_port))
