@@ -21,7 +21,7 @@ def handle_client(client_socket, remote_host, remote_port):
 def main():
     local_host = "0.0.0.0"  # Bind to all available interfaces
     local_port = 4747  # Change to desired local port
-    remote_host = "remote_target_ip"  # Change to target server address
+    remote_host = "167.235.8.252"  # Change to target server address
     
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind((local_host, local_port))
