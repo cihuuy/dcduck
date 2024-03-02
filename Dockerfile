@@ -1,6 +1,6 @@
 FROM debian
 ARG NGROK_TOKEN
-ARG REGION=ap
+ARG REGION=us
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update && apt upgrade -y && apt install -y \
     ssh wget unzip vim curl python3
